@@ -1,0 +1,28 @@
+--Create a gym equipment database
+
+CREATE TABLE Gym_Equipment (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, years_to_replace INTEGER);
+
+INSERT INTO Gym_Equipment VALUES 
+(1, "Barbbell", 299.99, 10, 10),
+(2, "Kilo PLates", 4999.99, 100, 30),
+(3, "Leg Press", 4999.99, 1,32),
+(4, "Bench Press", 499.99, 3, 25),
+(5, "Combo Rack", 2499.99, 8, 10),
+(6, "Dumbbells", 1999.99, 30, 5),
+(7, "Ellipticals", 399.99, 15, 20),
+(8, "Treadmills", 349.99, 15, 20),
+(9, "Stair Master", 379.99, 15, 20),
+(10, "Yoga Mats", 19.99, 20, 2),
+(11, "Jungle Gym", 2999.99, 1, 15),
+(12, "Smith Machine", 699.99, 1, 20),
+(13, "Resistance Bands", 9.99, 10, 3),
+(14, "Ab Wheel", 12.99, 3, 2),
+(15, "Preacher Curl", 199.99, 2, 10);
+
+--display the database ordered by price.
+SELECT * FROM Gym_Equipment
+ORDER BY price desc;
+
+--display which items have most longevity from the database.
+SELECT* FROM Gym_Equipment
+ORDER BY years_to_replace asc;
