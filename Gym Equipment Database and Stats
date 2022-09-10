@@ -1,6 +1,6 @@
 --Create a gym equipment database
 
-CREATE TABLE Gym_Equipment (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, years_to_replace INTEGER);
+CREATE TABLE Gym_Equipment (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, quantity INTEGER, years_to_replace INTEGER);
 
 INSERT INTO Gym_Equipment VALUES 
 (1, "Barbbell", 299.99, 10, 10),
